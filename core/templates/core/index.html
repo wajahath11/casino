@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATSport - Premier Sports Betting Platform</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="/" class="logo">SATSport</a>
+            <div class="nav-links">
+                <a href="#" class="active">Exchange</a>
+                <a href="#">Supernova Casino</a>
+                <a href="#">Evolution</a>
+                <a href="#">Lottery & Slots</a>
+                <a href="#">Exchange Games</a>
+                <a href="#">Casino</a>
+                <a href="#">QTECH</a>
+                <a href="#">BT SPORTSBOOK</a>
+            </div>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="register-btn">Register Now</button>
+            </div>
+        </nav>
+        <div class="sports-nav">
+            <div class="sports-links">
+                <a href="#" class="active">🎮 In Play</a>
+                <a href="#">🏏 Cricket</a>
+                <a href="#">⚽ Soccer</a>
+                <a href="#">🎾 Tennis</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>KICK OFF<br>YOUR WINS</h1>
+                <p class="odds-live">ODDS ARE LIVE</p>
+                <div class="cta-buttons">
+                    <button class="register-now">Register Now</button>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-providers">
+            <h2>Game Providers</h2>
+            <div class="provider-grid">
+                <div class="provider-card">
+                    <span>Indian Casino</span>
+                </div>
+                <div class="provider-card">
+                    <span>Evolution</span>
+                </div>
+                <div class="provider-card">
+                    <span>QTech</span>
+                </div>
+                <div class="provider-card">
+                    <span>Lottery & Slots</span>
+                </div>
+                <div class="provider-card">
+                    <span>Exchange Games</span>
+                </div>
+                <div class="provider-card">
+                    <span>Supernova</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="live-matches">
+            <div class="matches-header">
+                <h2>Live Matches</h2>
+                <div class="sports-filter">
+                    <button class="active">In-play</button>
+                    <button>Cricket</button>
+                    <button>Soccer</button>
+                    <button>Tennis</button>
+                </div>
+            </div>
+            <div class="matches-grid">
+                <!-- Live match cards will be populated dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                SATSport
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>About Us</h3>
+                    <a href="#">Company</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="link-column">
+                    <h3>Support</h3>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Responsible Gaming</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SATSport. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
