@@ -35,7 +35,7 @@
                 <ul
                     class="navbar-nav2fixed  navbar-nav d-flex align-items-lg-center gap-4 gap-sm-5  py-2 py-lg-0 align-self-center p2-bg">
                     <li class="dropdown show-dropdown">
-                        <a href="index.html">Home</a>
+                        <a href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="dropdown show-dropdown">
                         <a href="floorball.html">Live Betting</a>
@@ -54,8 +54,8 @@
                     </li>
                     <li class="dropdown show-dropdown d-block d-sm-none">
                         <div class="d-flex align-items-center flex-wrap gap-3">
-                            <a href="login.html" class="cmn-btn second-alt px-xxl-11 rounded-2">Log In</a>
-                        <a href="create-acount.html" class="cmn-btn px-xxl-11">Sign Up</a>
+                            <a href="{% url 'login' %}" class="cmn-btn second-alt px-xxl-11 rounded-2">Log In</a>
+                        <a href="{% url 'create-account' %}" class="cmn-btn px-xxl-11">Sign Up</a>
                         </div>
                     </li>
                 </ul>
@@ -99,8 +99,8 @@
                         </div>
                     </div>
                 </div>
-                <a href="login.html" class="cmn-btn second-alt px-xxl-11 rounded-2 me-5 me-lg-0 d-none d-sm-block">Log In</a>
-                <a href="create-acount.html" class="cmn-btn d-none px-xxl-11 d-sm-block d-lg-none d-xl-block">Sign Up</a>
+                <a href="{% url 'login' %}" class="cmn-btn second-alt px-xxl-11 rounded-2 me-5 me-lg-0 d-none d-sm-block">Log In</a>
+                <a href="{% url 'create-account' %}" class="cmn-btn d-none px-xxl-11 d-sm-block d-lg-none d-xl-block">Sign Up</a>
             </div>
             <button class="navbar-toggler mt-1 mt-sm-2 mt-lg-0" type="button" data-bs-toggle="collapse" aria-label="Navbar Toggler"
                 data-bs-target="#navbar-content" aria-expanded="true" id="nav-icon3">
@@ -113,7 +113,7 @@
                 <i class="ti ti-menu-deep left-nav-icon n8-color order-2 order-lg-0 d-none">
                     menu
                 </i>
-                <a class="navbar-brand d-center text-center gap-1 gap-lg-2 ms-lg-4" href="index.html">
+                <a class="navbar-brand d-center text-center gap-1 gap-lg-2 ms-lg-4" href="{% url 'home' %}">
                     <img class="logo" src="../../static/core/images/logo.png" alt="Logo">
                     <img class="logo d-none d-xl-block" src="../../static/core/images/logo-text.png" alt="Logo">
                 </a>
@@ -126,7 +126,7 @@
                 </div>
                 <ul class="secend-actives bg1-color rounded-5 d-flex flex-column gap-5 mb-5">
                     <li class="active">
-                        <a href="index.html" class="d-flex align-items-center gap-2"><i
+                        <a href="{% url 'home' %}" class="d-flex align-items-center gap-2"><i
                                 class="ti ti-brand-google-home n5-color fs-five"></i> Home</a>
                     </li>
                     <li class="active">
@@ -163,7 +163,7 @@
                         <button type="button" class="g1-color"><i class="ti ti-star"></i></button>
                     </li>
                     <li class="d-flex align-items-center justify-content-between px-3 py-2 rounded-3 gap-5">
-                        <a href="cricket.html" class="d-flex align-items-center gap-2"><img
+                        <a href="{% url 'cricket' %}" class="d-flex align-items-center gap-2"><img
                                 src="../../static/core/images/icon/cricket.png" alt="icon">Cricket</a>
                         <button type="button" class="g1-color"><i class="ti ti-star"></i></button>
                     </li>

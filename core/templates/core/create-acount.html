@@ -35,12 +35,12 @@
                 <ul
                     class="navbar-nav2fixed  navbar-nav d-flex align-items-lg-center gap-4 gap-sm-5  py-2 py-lg-0 align-self-center p2-bg">
                     <li class="dropdown show-dropdown">
-                        <a href="index.html">Home</a>
+                        <a href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="dropdown show-dropdown">
-                        <a href="floorball.html">Live Betting</a>
+                        <a href="{% url 'cricket' %}">Cricket</a>
                     </li>
-                    <li class="dropdown show-dropdown">
+                    <!-- <li class="dropdown show-dropdown">
                         <a href="soccer.html">Sports</a>
                     </li>
                     <li class="dropdown show-dropdown">
@@ -51,11 +51,11 @@
                     </li>
                     <li class="dropdown show-dropdown">
                         <a href="promotions.html">Promotions</a>
-                    </li>
+                    </li> -->
                     <li class="dropdown show-dropdown d-block d-sm-none">
                         <div class="d-flex align-items-center flex-wrap gap-3">
-                            <a href="login.html" class="cmn-btn second-alt px-xxl-11 rounded-2">Log In</a>
-                        <a href="create-acount.html" class="cmn-btn px-xxl-11">Sign Up</a>
+                            <a href="{% url 'login' %}" class="cmn-btn second-alt px-xxl-11 rounded-2">Log In</a>
+                        <a href="{% url 'create-account' %}" class="cmn-btn px-xxl-11">Sign Up</a>
                         </div>
                     </li>
                 </ul>
@@ -99,8 +99,8 @@
                         </div>
                     </div>
                 </div>
-                <a href="login.html" class="cmn-btn second-alt px-xxl-11 rounded-2 me-5 me-lg-0 d-none d-sm-block">Log In</a>
-                <a href="create-acount.html" class="cmn-btn d-none px-xxl-11 d-sm-block d-lg-none d-xl-block">Sign Up</a>
+                <a href="{% url 'login' %}" class="cmn-btn second-alt px-xxl-11 rounded-2 me-5 me-lg-0 d-none d-sm-block">Log In</a>
+                <a href="{% url 'create-account' %}" class="cmn-btn d-none px-xxl-11 d-sm-block d-lg-none d-xl-block">Sign Up</a>
             </div>
             <button class="navbar-toggler mt-1 mt-sm-2 mt-lg-0" type="button" data-bs-toggle="collapse" aria-label="Navbar Toggler"
                 data-bs-target="#navbar-content" aria-expanded="true" id="nav-icon3">
@@ -113,7 +113,7 @@
                 <i class="ti ti-menu-deep left-nav-icon n8-color order-2 order-lg-0 d-none">
                     menu
                 </i>
-                <a class="navbar-brand d-center text-center gap-1 gap-lg-2 ms-lg-4" href="index.html">
+                <a class="navbar-brand d-center text-center gap-1 gap-lg-2 ms-lg-4" href="{% url 'home' %}">
                     <img class="logo" src="../../static/core/images/logo.png" alt="Logo">
                     <img class="logo d-none d-xl-block" src="../../static/core/images/logo-text.png" alt="Logo">
                 </a>
@@ -136,8 +136,8 @@
                             <div class="col-xxl-10">
                                 <div class="pb-10 pt-8 mb-7 mt-12 mt-lg-0 px-4 px-sm-10">
                                     <h3 class="mb-6 mb-md-8">Create new account.</h3>
-                                    <p class="mb-10 mb-md-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                                        aliquet justo magna.</p>
+                                    <!-- <p class="mb-10 mb-md-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                                        aliquet justo magna.</p> -->
                                     <div class="login_section__form">
                                         <form>
                                             <div class="mb-5 mb-md-6">
@@ -159,15 +159,15 @@
                                             <button class="cmn-btn px-5 py-3 mb-6 w-100" type="submit">Sign Up Now</button>
                                         </form>
                                     </div>
-                                    <div class="login_section__socialmedia text-center mb-6">
+                                    <!-- <div class="login_section__socialmedia text-center mb-6">
                                         <span class="mb-6">Or continue with</span>
                                         <div class="login_section__social d-center gap-3">
                                             <a href="javascript:void(0)" class="n11-bg px-3 py-2 rounded-5"><i class="ti ti-brand-facebook-filled fs-four"></i></a>
                                             <a href="javascript:void(0)" class="n11-bg px-3 py-2 rounded-5"><i class="ti ti-brand-twitter-filled fs-four"></i></a>
                                             <a href="javascript:void(0)" class="n11-bg px-3 py-2 rounded-5"><i class="ti ti-brand-google fs-four fw-bold "></i></a>
                                         </div>
-                                    </div>
-                                    <span class="d-center gap-1">Already a member? <a class="g1-color" href="login.html">Login</a></span>
+                                    </div> -->
+                                    <span class="d-center gap-1">Already a member? <a class="g1-color" href="{% url 'login' %}">Login</a></span>
                                 </div>
                             </div>
                         </div>
@@ -185,15 +185,15 @@
                 <div class="col-12">
                     <div class="footer_section__main">
                         <div class="row gy-8">
-                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-6">
                                 <div class="footer_section__sports">
                                     <h4 class="mb-5 mb-md-6">Sports</h4>
                                     <ul class="d-flex flex-column gap-5">
                                         <li class="iconstyle d-flex align-items-center">
                                             <i class="ti ti-arrow-badge-right fs-five"></i>
-                                            <a class="fs-ten n4-color" href="javascript:void(0)">Sports</a>
+                                            <a class="fs-ten n4-color" href="{% url 'cricket' %}">Cricket</a>
                                         </li>
-                                        <li class="iconstyle d-flex align-items-center">
+                                        <!-- <li class="iconstyle d-flex align-items-center">
                                             <i class="ti ti-arrow-badge-right fs-five"></i>
                                             <a class="fs-ten n4-color" href="javascript:void(0)">Live Betting</a>
                                         </li>
@@ -212,11 +212,11 @@
                                         <li class="iconstyle d-flex align-items-center">
                                             <i class="ti ti-arrow-badge-right fs-five"></i>
                                             <a class="fs-ten n4-color" href="javascript:void(0)">Ice Hockey</a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
+                            <!-- <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
                                 <div class="footer_section__promotions">
                                     <h4 class="mb-5 mb-md-6">Promotions</h4>
                                     <ul class="d-flex flex-column gap-5">
@@ -238,8 +238,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                            </div> -->
+                            <!-- <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                                 <div class="footer_section__help">
                                     <h4 class="mb-5 mb-md-6">Help</h4>
                                     <ul class="d-flex flex-column gap-5">
@@ -266,8 +266,8 @@
 
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
+                            </div> -->
+                            <!-- <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
                                 <div class="footer_section__security">
                                     <h4 class="mb-5 mb-md-6">Security and Privacy</h4>
                                     <ul class="d-flex flex-column gap-5">
@@ -289,8 +289,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-sm-8 col-md-5 col-lg-6 col-xxl-3">
+                            </div> -->
+                            <div class="col-sm-8 col-md-5 col-lg-6 col-xxl-6">
                                 <div class="footer_section__community">
                                     <h4 class="mb-5 mb-md-6">Join our Community</h4>
                                     <ul class="d-flex align-items-center flex-wrap gap-5">
